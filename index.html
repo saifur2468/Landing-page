@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<!-- header part -->
+
+<div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div  tabindex="0" role="button" aria-label="Open menu" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a>Item 1</a></li>
+          <li>
+            <a>Parent</a>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-ghost text-xl">Saifur </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>Home</a></li>
+        <li>
+          <details>
+            <summary>Service</summary>
+            <ul class="p-2">
+              <li><a>Skills</a></li>
+              <li><a>project</a></li>
+              <li><a  onclick="window.location.href='Resume.html';">Resume</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a>About</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <a   onclick="window.location.href='hire.html';"    class="btn btn-error">Hire Me</a>
+    </div>
+  </div>
+
+
+
+    
+  <!-- hero section  -->
+  
+
+<!-- About section  -->
+
+<div class="lg:flex border-2 my-5 bg-sky-200">
+    <div>
+        <img class="w-[400px] h-[350px] rounded-xl"  src="images/WhatsApp Image 2023-09-26 at 9.01.56 PM.jpeg">
+
+    </div>
+    <div>
+        <h1 class="text-red-400 text-5xl mx-2">About me </h1>
+        <p class=" text-3xl my-6"><span class="text-3xl text-cyan-950 mx-2">Saifur</span>,Web Developer </p>
+        <p class="font-sans mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatem magnam est enim incidunt iusto cumque in aspernatur voluptates odit natus quo.<br>
+         debitis fugiat, excepturi libero earum alias dolorum numquam ducimus exercitationem vitae inventore! Facere repellat culpa, quos esse iure doloribus maiores possimus enim quasi id. Porro asperiores veritatis animi!</p>
+
+         
+    <button class="btn btn-secondary mx-2 my-2">Read More </button>
+      
+    </div>
+</div>
+
+<!-- our web datalist -->
+<div class="stats shadow my-5 flex justify-center items-center">
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="inline-block h-8 w-8 stroke-current">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
+      <div class="stat-title">  Our Resume Downloads</div>
+      <div class="stat-value">31K</div>
+      <div class="stat-desc">Jan 1st - Feb 1st</div>
+    </div>
+  
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="inline-block h-8 w-8 stroke-current">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+        </svg>
+      </div>
+      <div class="stat-title">Vist my Web </div>
+      <div class="stat-value">4,200</div>
+      <div class="stat-desc">↗︎ 400 (22%)</div>
+    </div>
+  
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="inline-block h-8 w-8 stroke-current">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+        </svg>
+      </div>
+      <div class="stat-title"> our complete project </div>
+      <div class="stat-value">1,200</div>
+      <div class="stat-desc">↘︎ 90 (14%)</div>
+    </div>
+  </div>
+
+<!-- my work section  -->
+ <div>
+
+    <div >
+        <h1 class="text-center text-2xl text-zinc-500">I like to make things esay and fun </h1>
+        <p class="text-center font-sans">my Special service for busseinea development </p>
+        
+        <section class="lg:grid grid-cols-4 my-5 gap-2">
+            <div class=" border-2">
+                <img src="images/web.jpeg">
+                <h3 class="text-center">Web development</h3>
+                <p class="text-center my-5">Web development can range from developing a simple single static page of plain text to complex web applications,</p>
+            </div>
+            <br>
+            <div class="border-2">
+                <img src="images/app.png">
+               <h3 class="text-center">App development</h3>
+               <p class="text-center my-5">Web development can range from developing a simple single static page of plain text to complex web applications,</p>
+            </div>
+            <br>
+            <div class="border-2">
+                <img src="images/web desgin.jpeg">
+                <h3 class="text-center">Web desgin</h3>
+                <p class="text-center my-5">Web development can range from developing a simple single static page of plain text to complex web applications,</p>
+             </div>
+            <br>
+            <div class="border-2">
+                <img src="images/api.jpeg">
+                <h3 class="text-center">Web development</h3>
+                <p class="text-center my-5">Web development can range from developing a simple single static page of plain text to complex web applications,</p>
+                </div>
+            <br>
+            <div class="border-2">
+                <img src="images/ui.png">
+                <h3 class="text-center">Web development</h3>
+                <p class="text-center my-5">Web development can range from developing a simple single static page of plain text to complex web applications,</p>
+            </div>
+            <br>
+            <div class="border-2">
+                <img src="images/net.jpeg">
+                <h3 class="text-center">Web development</h3>
+                <p class="text-center my-5">Web development can range from developing a simple single static page of plain text to complex web applications,</p>
+            </div>
+            <br>
+            <div class="border-2">
+                <img src="images/soft.jpeg">
+                <h3 class="text-center">Web development</h3>
+                <p class="text-center my-5">Web development can range from developing a simple single static page of plain text to complex web applications,</p>
+            </div>
+            <br>
+            <div class="border-2">
+                <img  class="mx-5"   src="images/pay.jpeg">
+                <h3 class="text-center">Web development</h3>
+                <p class="text-center">Web development can range from developing a simple single static page of plain text to complex web applications,</p>
+            </div>
+            <br>
+        
+            
+        
+        </section>
+        
+        
+        
+        
+        </div>
+
+ </div>
+
+
+  <div class="flex justify-center items-center">
+    <button class="btn btn-warning ">
+        view more project 
+    </button>
+  </div>
+  <br>
+
+
+
+<!-- controll your web page coller  -->
+   <label class="flex cursor-pointer gap-2">
+    <span class="label-text">Current</span>
+    <input type="checkbox" value="synthwave" class="toggle theme-controller" />
+    <span class="label-text">Synthwave</span>
+  </label>
+  
+ <!-- our complete project list  -->
+ <section class="lg:flex justify-center items-center gap-3">
+  <div class="card bg-base-100 w-96 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img
+        src="images/web.jpeg"
+        alt="Shoes"
+        class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">Web Development</h2>
+      <p> web development is very important part in your life </p>
+      <div class="card-actions">
+        <button  class="btn btn-primary " onclick="showModal('webModal')"  >View More </button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="card bg-base-100 w-96 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img
+        src="images/net.jpeg"
+        alt="Shoes"
+        class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">NetWorking System </h2>
+      <p>NetWorking system is verey important in all sector.it is very high sesurity sestem </p>
+      <div class="card-actions">
+        <button class="btn btn-primary"   onclick="showModal('networkModal')">View more </button>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="card bg-base-100 w-96 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img
+        src="images/web desgin.jpeg"
+        alt="Shoes"
+        class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">web Desgin</h2>
+      <p> web desgin is first part in web development this part is desgin in website interface </p>
+      <div class="card-actions">
+        <button class="btn btn-primary"     onclick="showModal('designModal')">View more </button>
+      </div>
+    </div>
+  </div>
+  
+ </section>
+
+  <!-- modal section  -->
+   <!-- You can open the modal using ID.showModal() method -->
+   <section class="lg:flex justify-center items-center gap-3">
+    <!-- Web Development Card -->
+    <div class="card bg-base-100 w-96 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img src="images/web.jpeg" alt="Web Development" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Web Development</h2>
+        <p>Web development is a very important part of your life.</p>
+        <div class="card-actions">
+          <button class="btn btn-primary" onclick="showModal('webModal')">View More</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Networking System Card -->
+    <div class="card bg-base-100 w-96 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img src="images/net.jpeg" alt="Networking System" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Networking System</h2>
+        <p>Networking systems are vital in all sectors and provide high security.</p>
+        <div class="card-actions">
+          <button class="btn btn-primary" onclick="showModal('networkModal')">View More</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Web Design Card -->
+    <div class="card bg-base-100 w-96 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img src="images/web desgin.jpeg" alt="Web Design" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Web Design</h2>
+        <p>Web design is the first step in web development, focusing on website interfaces.</p>
+        <div class="card-actions">
+          <button class="btn btn-primary" onclick="showModal('designModal')">View More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal Section -->
+  <!-- Web Development Modal -->
+  <dialog id="webModal" class="modal">
+    <div class="modal-box">
+      <h3 class="text-lg font-bold">Web Development</h3>
+      <p class="py-4">Web development builds websites and web apps to bring ideas to life.</p>
+      <div class="modal-action">
+        <button class="btn" onclick="closeModal('webModal')">Close</button>
+      </div>
+    </div>
+  </dialog>
+  
+  <!-- Networking System Modal -->
+  <dialog id="networkModal" class="modal">
+    <div class="modal-box">
+      <h3 class="text-lg font-bold">Networking System</h3>
+      <p class="py-4">Networking systems are essential for security and data transmission.</p>
+      <div class="modal-action">
+        <button class="btn" onclick="closeModal('networkModal')">Close</button>
+      </div>
+    </div>
+  </dialog>
+  
+  <!-- Web Design Modal -->
+  <dialog id="designModal" class="modal">
+    <div class="modal-box">
+      <h3 class="text-lg font-bold">Web Design</h3>
+      <p class="py-4">Web design creates the visual layout and user experience of a website.</p>
+      <div class="modal-action">
+        <button class="btn" onclick="closeModal('designModal')">Close</button>
+      </div>
+    </div>
+  </dialog>
+ <!-- any qustion section  -->
+ <h1 class="text-center text-2xl text-cyan-900 font-serif border-2 bg-orange-400">Any question plz asked me </h1>
+  <section class="lg:flex justify-center items-center">
+    
+
+
+  <!-- Question Box -->
+ 
+  <div class=" lg:card w-96 bg-base-100 shadow-xl  ">
+   <div class="card-body">
+     <h2 class="card-title">Ask a Question</h2>
+     <div class="form-control mb-4">
+       <label class="label">
+         <span class="label-text">Your Question</span>
+       </label>
+       <input
+         type="text"
+         placeholder="Type your question here"
+         class="input input-bordered w-full"
+       />
+     </div>
+     <div class="form-control mb-4">
+       <label class="label">
+         <span class="label-text">Message</span>
+       </label>
+       <textarea
+         class="textarea textarea-bordered w-full"
+         placeholder="Type your message here"
+       ></textarea>
+     </div>
+     <div class="card-actions justify-end">
+       <button class="btn btn-primary">Submit</button>
+     </div>
+   </div>
+ </div>
+  </section>
+
+   
+ <!-- my proudect section  -->
+  <section>
+    <div>
+      <h1 class="text-center text-4xl text-cyan-400 font-serif my-5">All category of proudect </h1>
+    </div>
+<div class="lg:flex  justify-center items-center font-serif gap-5 text-red-400 text-3xl my-5">
+      <button   onclick="showCategory('mobile')"   class="btn btn-active btn-ghost" >mobile</button>
+      <button  onclick="showCategory('laptop')" class="btn btn-active btn-ghost">laptop</button>
+      <button  onclick="showCategory('headphone')" class="btn btn-active btn-ghost">head phone </button>
+      </div>
+
+  <!-- mobile section -->
+ <div  id="mobile"    class="flex justify-center items-center gap-4 hidden">
+  <div class="card w-full max-w-xs sm:max-w-sm bg-white shadow-xl rounded-lg overflow-hidden">
+    <figure>
+      <img src="images/phone(1).jpeg" alt="Product Image" class="w-full h-48 object-cover" />
+    </figure>
+    <div class="p-4">
+      <h2 class="card-title text-lg sm:text-xl font-bold"> itel S23</h2>
+      <p class="text-gray-600 mt-2 text-sm sm:text-base">$99.99</p>
+      <div class="card-actions mt-4">
+        <button class="btn btn-primary w-full text-sm sm:text-base" onclick="window.location.href='phone1.html'">View More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- phone2 -->
+  <div class="card w-full max-w-xs sm:max-w-sm bg-white shadow-xl rounded-lg overflow-hidden">
+    <figure>
+      <img src="images/phone-2.jpeg" alt="Product Image" class="w-full h-48 object-cover" />
+    </figure>
+    <div class="p-4">
+      <h2 class="card-title text-lg sm:text-xl font-bold">oppo</h2>
+      <p class="text-gray-600 mt-2 text-sm sm:text-base">$99.99</p>
+      <div class="card-actions mt-4">
+        <button class="btn btn-primary w-full text-sm sm:text-base" onclick="window.location.href='phone2.html'",>View More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 rd phone -->
+  <div class="card w-full max-w-xs sm:max-w-sm bg-white shadow-xl rounded-lg overflow-hidden">
+    <figure>
+      <img src="images/phone-3.jpeg" alt="Product Image" class="w-full h-48 object-cover" />
+    </figure>
+    <div class="p-4">
+      <h2 class="card-title text-lg sm:text-xl font-bold">redmi 12 pro </h2>
+      <p class="text-gray-600 mt-2 text-sm sm:text-base">$99.99</p>
+      <div class="card-actions mt-4">
+        <button class="btn btn-primary w-full text-sm sm:text-base"onclick="window.location.href='phone3.html'" >View More</button>
+      </div>
+    </div>
+  </div>
+
+ </div>
+
+  <!-- laptop section -->
+
+  <div id="laptop"    class="flex justify-center items-center gap-4 my-5 hidden ">
+    <div class="card w-full max-w-xs sm:max-w-sm bg-white shadow-xl rounded-lg overflow-hidden">
+      <figure>
+        <img src="images/laptopo-1.jpeg" alt="Product Image" class="w-full h-48 object-cover" />
+      </figure>
+      <div class="p-4">
+        <h2 class="card-title text-lg sm:text-xl font-bold"> hp 945 pro </h2>
+        <p class="text-gray-600 mt-2 text-sm sm:text-base">$99.99</p>
+        <div class="card-actions mt-4">
+          <button class="btn btn-primary w-full text-sm sm:text-base" onclick="window.location.href ='laptop1.html'" ;>View More</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- laptop2 -->
+    <div class="card w-full max-w-xs sm:max-w-sm bg-white shadow-xl rounded-lg overflow-hidden">
+      <figure>
+        <img src="images/laptop-2.jpeg" alt="Product Image" class="w-full h-48 object-cover" />
+      </figure>
+      <div class="p-4">
+        <h2 class="card-title text-lg sm:text-xl font-bold">dell inspiron 5570</h2>
+        <p class="text-gray-600 mt-2 text-sm sm:text-base">$99.99</p>
+        <div class="card-actions mt-4">
+          <button class="btn btn-primary w-full text-sm sm:text-base" onclick="window.location.href ='laptop2.html'";>View More</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- 3 rd laptop  -->
+    <div class="card w-full max-w-xs sm:max-w-sm bg-white shadow-xl rounded-lg overflow-hidden">
+      <figure>
+        <img src="images/laptop-3.jpeg" alt="Product Image" class="w-full h-48 object-cover" />
+      </figure>
+      <div class="p-4">
+        <h2 class="card-title text-lg sm:text-xl font-bold"> gaming pro  </h2>
+        <p class="text-gray-600 mt-2 text-sm sm:text-base">$99.99</p>
+        <div class="card-actions mt-4">
+          <button class="btn btn-primary w-full text-sm sm:text-base" onclick="window.location.href='laptop3.html'">View More</button>
+        </div>
+      </div>
+    </div>
+  
+   </div>
+
+
+   <!-- hadephone section  -->
+   <div  id="headphone" class="flex justify-center items-center gap-4 my-5 hidden ">
+    <div class="card w-full max-w-xs sm:max-w-sm bg-white shadow-xl rounded-lg overflow-hidden">
+      <figure>
+        <img src="images/h1.jpeg" alt="Product Image" class="w-full h-48 object-cover" />
+      </figure>
+      <div class="p-4">
+        <h2 class="card-title text-lg sm:text-xl font-bold"> hoco 35 air</h2>
+        <p class="text-gray-600 mt-2 text-sm sm:text-base">$99.99</p>
+        <div class="card-actions mt-4">
+          <button class="btn btn-primary w-full text-sm sm:text-base">View More</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- hade2 -->
+    <div class="card w-full max-w-xs sm:max-w-sm bg-white shadow-xl rounded-lg overflow-hidden">
+      <figure>
+        <img src="images/h2.jpeg" alt="Product Image" class="w-full h-48 object-cover" />
+      </figure>
+      <div class="p-4">
+        <h2 class="card-title text-lg sm:text-xl font-bold">jbl 90 pro </h2>
+        <p class="text-gray-600 mt-2 text-sm sm:text-base">$99.99</p>
+        <div class="card-actions mt-4">
+          <button class="btn btn-primary w-full text-sm sm:text-base">View More</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- 3 rd phone -->
+    <div class="card w-full max-w-xs sm:max-w-sm bg-white shadow-xl rounded-lg overflow-hidden">
+      <figure>
+        <img src="images/h3.jpeg" alt="Product Image" class="w-full h-48 object-cover" />
+      </figure>
+      <div class="p-4">
+        <h2 class="card-title text-lg sm:text-xl font-bold"> max 55  </h2>
+        <p class="text-gray-600 mt-2 text-sm sm:text-base">$99.99</p>
+        <div class="card-actions mt-4">
+          <button class="btn btn-primary w-full text-sm sm:text-base">View More</button>
+        </div>
+      </div>
+    </div>
+  
+   </div>
+   
+  </section>
+
+
+  <script>
+    function showCategory(category) {
+     const categories = ['mobile', 'laptop', 'headphone'];
+      categories.forEach(cat => {
+        document.getElementById(cat).classList.add('hidden');
+      });
+  
+     document.getElementById(category).classList.remove('hidden');
+    }
+  </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <footer></footer> -->
+  <footer class="footer bg-base-300 text-base-content p-10 my-4">
+    <nav>
+      <h6 class="footer-title">Services</h6>
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Company</h6>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Social</h6>
+      <div class="grid grid-flow-col gap-4">
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+          </svg>
+        </a>
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+          </svg>
+        </a>
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </footer>
+
+
+
+ <script src="landing.js"></script>   
+</body>
+</html>
